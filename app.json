@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.codewithvoran.mybible"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8c3ca5ff-8ba3-464d-92e0-2d54fc060bae"
+      }
     }
   }
 }
