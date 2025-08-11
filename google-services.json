@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835589377168",
+    "project_id": "my-bible-a1f11",
+    "storage_bucket": "my-bible-a1f11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835589377168:android:1cfdd2f9a7c8f58ecc9c15",
+        "android_client_info": {
+          "package_name": "com.codewithvoran.mybible"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlso3IIL3XRqykwpqursDfcvBfIf8jDHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

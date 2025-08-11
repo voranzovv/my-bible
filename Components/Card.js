@@ -24,6 +24,12 @@ const Card = () => {
       const result = await Share.share({
         message:
           todayVerse?.details.reference + " |  " + todayVerse?.details.text,
+        title: "Today's bible verse",
+        options: {
+          dialogTitle: "Today's bible verse",
+          subject: "Today's bible verse",
+        }
+
       });
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
@@ -70,7 +76,7 @@ const Card = () => {
         todayVerse?.details.text
       }
 
-      <Button title="Speak!" onPress={() => Speech.speak(todayVerse?.details.reference + "    " + todayVerse?.details.text)} />
+      <Button title="Speak!" onPress={() => Speech.speak(todayVerse?.details.reference + ".........!!!    " + todayVerse?.details.text)} />
       {/* <Button title='Share' onPress={onShare} /> */}
       <Flex alignItems="flex-end">
         <ShareIcon onPress={onShare} size="5" mt="2" color="emerald.500" />

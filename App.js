@@ -8,6 +8,8 @@ import TodayReading from './Components/TodayReading';
 import AppBar from './Components/AppBar';
 import Books from './Components/Books';
 import Documentaries from './Components/Documentaries';
+import Search from './Components/Search';
+import Notification from './Components/Notification';
 
 export default function App() {
   const config = {
@@ -22,10 +24,12 @@ export default function App() {
     // </View>
     <NativeBaseProvider config={config}>
       <AppBar />
+      {/* <Search/> */}
 
       <ScrollView showsVerticalScrollIndicator={false}>
         <Box mt={'3'} mx={'4'}>
           <Greeting />
+      <Notification/>
           {/* <Documentaries /> */}
           <TouchableOpacity>
             <Card />
@@ -33,12 +37,14 @@ export default function App() {
           <Books />
           <Box mt={3} mx='2' >
             <Heading size="md" ml="-1">
-              Today's reading
+              Bible Stories
             </Heading>
           </Box>
           {/* <TodayReading /> */}
 
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} >
+            <TodayReading />
+            <TodayReading />
             <TodayReading />
             <TodayReading />
           </ScrollView>
